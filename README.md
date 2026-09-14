@@ -17,7 +17,7 @@ Plain old HTML, CSS & JavaScript. No frameworks, no build tools, no drama.
 
  Live Demo
 
-🔗 **[Check it out here](#)** ← *replace with your link*
+🔗 https://alicode44.github.io/Hotel-Reservation-Form-Project/
 
  Run it locally
 
