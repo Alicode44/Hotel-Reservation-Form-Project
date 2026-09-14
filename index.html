@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Grand Horizon Hotel - Reservation</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<section>
+			<h1>The Grand Horizon Hotel</h1>
+			<p>Reserve your unforgettable stay at our five-star luxury hotel. Fill out the form below to book your room.</p>
+			<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="post">
+				<input type="hidden" id="myhidden" name="myhidden" value="myvalue">
+				<fieldset>
+					<legend>Guest Information</legend>
+					<label for="name">Full Name</label>
+					<input type="text" id="name" name="name" placeholder="John Doe" required>
+					<label for="phone">Phone Number</label>
+					<input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+					<label for="email">Email Address</label>
+					<input type="email" id="email" name="email" placeholder="you@example.com" required>
+				</fieldset>
+
+				<fieldset>
+					<legend>Reservation Details</legend>
+					<label for="checkin">Check-in Date</label>
+					<input type="date" id="checkin" name="checkin" required>
+
+					<label for="checkout">Check-out Date</label>
+					<input type="date" id="checkout" name="checkout" required>
+
+					<label for="guests">Number of Guests</label>
+					<input type="number" id="guests" name="guests" min="1" max="10" value="2" required>
+
+					<p>What type of room do you prefer?</p>
+					<label>
+						<input type="radio" name="roomtype" value="standard" checked>
+						Standard Room
+					</label>
+					<label>
+						<input type="radio" name="roomtype" value="deluxe">
+						Deluxe Room
+					</label>
+					<label>
+						<input type="radio" name="roomtype" value="suite">
+						Executive Suite
+					</label>
+					<label>
+						<input type="radio" name="roomtype" value="penthouse">
+						Presidential Penthouse
+					</label>
+
+					<label for="packagetype">Select a Package</label>
+					<select id="packagetype" name="packagetype">
+						<option selected>Select One...</option>
+						<option value="room-only">Room Only</option>
+						<option value="breakfast">Bed &amp; Breakfast</option>
+						<option value="half-board">Half Board</option>
+						<option value="all-inclusive">All Inclusive</option>
+					</select>
+
+					<label for="comments">Special Requests:</label>
+					<textarea id="comments" name="comments" placeholder="Let us know how we can make your stay more enjoyable..."></textarea>
+
+					<label>
+						<input type="checkbox" value="subscribe" name="subscribe" checked>
+						Keep me updated with exclusive offers and news!
+					</label>
+				</fieldset>
+
+				<button type="submit">Book Now</button>
+			</form>
+		</section>
+
+		<aside>
+			<h3>Our Location</h3>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2412648750455!2d-73.98784368459395!3d40.75797467932684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fedd0a6a5b%3A0x9c1a5b6f5c1b1b1b!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+				width="400" height="300" frameborder="0" style="border:0" allowfullscreen
+				title="Hotel Location">
+			</iframe>
+			<address>
+				The Grand Horizon Hotel &middot;<br>
+				1500 Broadway Avenue &middot;<br>
+				New York, NY 10036 &middot;<br>
+				United States
+			</address>
+		</aside>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
