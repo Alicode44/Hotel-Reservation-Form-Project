@@ -1,7 +1,7 @@
 Hotel-Reservation-Form-Project
 Grand Horizon Hotel — Reservation Form
 
-A fake hotel booking form I built to practice responsive design & form UX. No real aliens were abducted in the making of this project. 👽➡️🏨
+A fake hotel booking form I built to practice responsive design & form UX. No real aliens were abducted in the making of this project. 
 
  What's inside?
 
