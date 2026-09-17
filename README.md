@@ -30,3 +30,6 @@ This is a learning project — the hotel doesn't exist, the map is decorative, a
 
 
 Feel free to fork, remix, or turn it into your own imaginary business. 
+
+
+Author: Alicode44
